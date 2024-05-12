@@ -13,8 +13,8 @@ create table orders (
   total_amount decimal (10,2),
   customer_id varchar (20),
   product_id varchar (20),
-  foreign key (customer_id) references customer(customer_id),
-  foreign key (product_id) references product(product_id)
+  constraint FK1 foreign key (customer_id) references customer(customer_id),
+  constraint FK2 foreign key (product_id) references product(product_id)
 );
 
 alter table product add category varchar (20);
