@@ -9,7 +9,6 @@ product_name varchar (20) not null,
 price decimal check (price>0));
 
 create table orders (
-  order_id int primary key auto_increment,
   quantity integer,
   total_amount decimal (10,2),
   customer_id varchar (20),
